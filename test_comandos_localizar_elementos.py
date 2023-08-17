@@ -20,7 +20,7 @@ driver.get("https://www.saucedemo.com")
 auth_fields = driver.find_elements(By.XPATH, "//div[@class='form_group']")
 print(auth_fields)
 print(len(auth_fields))
-assert len(auth_fields) == 234, "O tamanho da lista encontrados é diferente do esperado "
+assert len(auth_fields) == 2, "O tamanho da lista encontrados é diferente do esperado "
 
 # time.sleep(3)
 
