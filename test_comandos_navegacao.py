@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
-driver.implicitly_wait(15)
+driver.implicitly_wait(5)
 # maximize_window()
 driver.maximize_window()
 
