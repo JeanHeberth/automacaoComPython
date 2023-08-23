@@ -9,13 +9,13 @@ driver = webdriver.Chrome()
 # get()
 driver.get("https://www.saucedemo.com")
 
-# username = driver.find_element(By.ID, "user-name")
-# password = driver.find_element(By.ID, "password")
-# btnLogin = driver.find_element(By.ID, "login-button")
-#
-# username.send_keys("standard_user")
-# password.send_keys("secret_sauce")
-# btnLogin.click()
+username = driver.find_element(By.ID, "user-name")
+password = driver.find_element(By.ID, "password")
+btnLogin = driver.find_element(By.ID, "login-button")
+
+username.send_keys("standard_user")
+password.send_keys("secret_sauce")
+btnLogin.click()
 
 auth_fields = driver.find_elements(By.XPATH, "//div[@class='form_group']")
 print(auth_fields)
