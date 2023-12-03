@@ -1,4 +1,4 @@
-import conftest
+from tests import conftest
 
 
 class BasePage:

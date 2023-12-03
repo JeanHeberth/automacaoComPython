@@ -1,12 +1,12 @@
 from selenium.webdriver.common.by import By
 
-import conftest
+from tests import conftest
 from pages.base_page import BasePage
-
 
 class LoginPage(BasePage):
 
     def __init__(self):
+        super().__init__()
         self.driver = conftest.driver
         self.username_field = (By.ID, "user-name")
         self.password_field = (By.ID, "password")
